@@ -1,0 +1,316 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    margin: 20px;
+}
+.btn1{
+    border: 3px solid rgb(154, 10, 10);
+    background: rgb(154, 10, 10);
+}
+.btn2{
+    background: rgba(0, 0, 0,.3);
+    border: 3px solid rgb(183, 90, 44);
+}
+
+.preview{
+    position: relative;
+    background-image: url(preview4.avif);
+    background-size: 100% 100%;
+    height: 100vh;
+}
+.preview .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.743);
+}
+.preview header{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.preview header .logo{
+    color: rgb(154, 10, 10);
+}
+.preview header .nav-bar{
+    display: flex;
+    list-style-type: none;
+}
+
+.preview header .nav-bar .nav-link {
+    margin-right: 50px;
+}
+.preview header .nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+.preview .welcome {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 130px auto;
+}
+.preview .welcome h1{
+    color: #9a0a0a;
+    margin: 30px 0;
+    font-size: 50px;
+}
+
+.preview .welcome p{
+    font-weight: bold;
+    color: gray;
+}
+
+/*
+section who we are?
+*/
+.sec-who{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.sec-who .img {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-who .img .border-img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border: 5px solid #000 ;
+}
+.sec-who .img img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.sec-who .who {
+    padding: 0 20px;
+    width: 40%;
+}
+.sec-who .who .content{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec-who .who .content .c{
+    width: 50%;
+    display: flex;
+    margin-bottom: 2px;
+}
+
+/*
+section our Services
+*/
+.sec-our-Services {
+    padding: 50px 50px;
+    height: 400px;
+    background: rgb(236, 236, 236);
+}
+.sec-our-Services  img {
+    margin-left: 40px;
+    float: right;
+}
+.sec-our-Services  .our-Services {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+.sec-our-Services  .our-Services h1 {
+    height: 10%;
+}
+.sec-our-Services  .our-Services .cards {
+    display: flex; 
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sec-our-Services  .our-Services .cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 22%;
+    justify-content: start;
+}
+
+/*
+section our portfolio  !
+*/
+
+.sec-our-portfolio{
+    background: rgb(255, 254, 254);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding:20px 300px;
+    height: 600px;
+    text-align: center;
+}
+.sec-our-portfolio .portfolios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sec-our-portfolio .portfolios .portfolio{
+    width: 30%;
+}
+/*
+section feedback  !
+*/
+.sec-feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+
+
+.sec-feedback .box-feedback {
+    padding: 0 20px;
+    background: rgb(211, 211, 211);
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+}
+.sec-feedback .box-feedback .redback {
+    width: 300px ;
+    height: 300px;
+    position: absolute;
+    background: red;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg) translateX(-70%);
+    z-index: 1;
+
+}
+.sec-feedback .box-feedback img{
+    z-index: 20;
+    border-radius: 50%;
+}
+.sec-feedback .box-feedback .content{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.sec-feedback .box-feedback .content .info{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+/*
+section our Blog  !
+*/
+
+.sec-our-Blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgb(234, 234, 234);
+    padding: 20px;
+    height: 600px;
+    text-align: center;
+    gap: 30px;
+}
+
+.sec-our-Blog .title{
+    width: 100%;
+}
+.sec-our-Blog .Blog{
+    background: #fff;
+    width: 27%;
+    height: 350px;
+    text-align: start;
+}
+.sec-our-Blog .Blog *:not(img){
+    padding: 10px;
+}
+/*
+section Contact us!
+*/
+
+.sec-Contact{
+    padding: 20px;
+    text-align: center;
+    height: 400px;
+    
+}
+.sec-Contact form{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+.sec-Contact form input ,.sec-Contact form textarea{
+    outline: none;
+    border: none;
+    border-bottom:2px  solid #9a0a0a ;
+}
+.sec-Contact form input[type="text"]{
+    width: 30%;
+}
+.sec-Contact form *:not([type="text"]){
+    width: calc(60% + 20px) ;
+}
+.sec-Contact form button{
+    width: 40% !important;
+}
+/*
+footer  !
+*/
+footer {
+    color: #bfbfbf;
+    padding: 0;
+    margin-top: -21px;
+}
+
+
+footer .bottom{
+    text-align: center;
+    background: rgb(33, 33, 33);
+    height: 200px;
+    padding: 20px 0;
+}
+footer .bottom  h3{
+    margin: 30px 0;
+}
+footer .bottom .icons{
+    display: flex;
+    padding: 0 40%;
+    text-align: center;
+}
+footer .bottom .icons i{
+    margin: 0 15px;
+}
+
+
+
